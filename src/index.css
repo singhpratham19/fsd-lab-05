@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f2f6;
+  color: #2b2d42;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+header {
+  background-color: #2b2d42;
+  color: white;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header p {
+  margin: 4px 0 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 12px 0 4px;
+}
+
+input,
+textarea {
+  border: 1px solid #8d99ae;
+  border-radius: 4px;
+  font: inherit;
+  padding: 8px;
+  width: 100%;
+}
+
+button {
+  background-color: #2b2d42;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  margin: 8px 8px 0 0;
+  padding: 8px 16px;
+}
+
+button.secondary {
+  background-color: #5c677d;
+}
+
+button.danger {
+  background-color: #c1121f;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.layout {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 16px;
+}
+
+.post-card {
+  background-color: white;
+  border-left: 5px solid #c1121f;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+  padding: 12px 16px;
+}
+
+.post-card h3 {
+  margin: 0;
+}
+
+.post-card p {
+  margin: 4px 0;
+}
+
+.author {
+  color: #5c677d;
+}
+
+.error {
+  color: #c1121f;
+}
+
+.single-post {
+  margin: 0 auto;
+  max-width: 700px;
+  overflow-wrap: anywhere;
+  padding: 16px;
+}
+
+.post-author {
+  color: #5c677d;
+}
+
+.post-content {
+  white-space: pre-wrap;
+}
+
+/* Two columns on larger screens */
+@media (min-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
